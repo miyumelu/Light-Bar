@@ -1,0 +1,11 @@
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\bin\Debug\net8.0\Light Bar.deps.json
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\bin\Debug\net8.0\Light Bar.dll
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\bin\Debug\net8.0\Light Bar.pdb
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\Light Bar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\Light Bar.AssemblyInfoInputs.cache
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\Light Bar.AssemblyInfo.vb
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\Light Bar.vbproj.CoreCompileInputs.cache
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\Light Bar.dll
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\refint\Light Bar.dll
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\Light Bar.pdb
+C:\Users\deniz\Desktop\Smart Strip\Light Bar\Light Bar\obj\Debug\net8.0\ref\Light Bar.dll

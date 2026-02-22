@@ -1,0 +1,21 @@
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\bin\Debug\net8.0-windows\Demo - Smart Strip Server.exe
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\bin\Debug\net8.0-windows\Demo - Smart Strip Server.deps.json
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\bin\Debug\net8.0-windows\Demo - Smart Strip Server.runtimeconfig.json
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\bin\Debug\net8.0-windows\Demo - Smart Strip Server.dll
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\bin\Debug\net8.0-windows\Demo - Smart Strip Server.pdb
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo___Smart_Strip_Server.Form1.resources
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.vbproj.GenerateResource.cache
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.AssemblyInfoInputs.cache
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.AssemblyInfo.vb
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.vbproj.CoreCompileInputs.cache
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.dll
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\refint\Demo - Smart Strip Server.dll
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.pdb
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.genruntimeconfig.cache
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\ref\Demo - Smart Strip Server.dll
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\bin\Debug\net8.0-windows\Light Bar.dll
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\bin\Debug\net8.0-windows\Light Bar.pdb
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - Smart Strip Server.vbproj.AssemblyReference.cache
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo___Smart_Strip_Server.Form2.resources
+C:\Users\deniz\Desktop\Smart Strip\Demo - Smart Strip Server\Demo - Smart Strip Server\obj\Debug\net8.0-windows\Demo - S.A8882332.Up2Date
