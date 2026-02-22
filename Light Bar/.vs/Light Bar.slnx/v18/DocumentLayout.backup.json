@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|solutionrelative:light bar\\server.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|c:\\users\\deniz\\desktop\\smart strip\\light bar\\light bar\\menumodels.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|solutionrelative:light bar\\menumodels.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|c:\\users\\deniz\\desktop\\smart strip\\light bar\\light bar\\light bar.vbproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|solutionrelative:light bar\\light bar.vbproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|c:\\users\\deniz\\desktop\\smart strip\\light bar\\light bar\\light bar.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|solutionrelative:light bar\\light bar.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|c:\\users\\deniz\\desktop\\smart strip\\light bar\\light bar\\client.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|solutionrelative:light bar\\client.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|c:\\users\\deniz\\desktop\\smart strip\\light bar\\light bar\\light bar.vbproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C1C13164-80FA-424D-9CC8-207B2D89DD54}|Light Bar\\Light Bar.vbproj|solutionrelative:light bar\\light bar.vbproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuModels.vb",
+              "DocumentMoniker": "C:\\Users\\deniz\\Desktop\\Smart Strip\\Light Bar\\Light Bar\\MenuModels.vb",
+              "RelativeDocumentMoniker": "Light Bar\\MenuModels.vb",
+              "ToolTip": "C:\\Users\\deniz\\Desktop\\Smart Strip\\Light Bar\\Light Bar\\MenuModels.vb*",
+              "RelativeToolTip": "Light Bar\\MenuModels.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-02-21T23:27:52.872Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,14 +53,14 @@
               "RelativeDocumentMoniker": "Light Bar\\Server.vb",
               "ToolTip": "C:\\Users\\deniz\\Desktop\\Smart Strip\\Light Bar\\Light Bar\\Server.vb*",
               "RelativeToolTip": "Light Bar\\Server.vb*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAwwCsAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-02-21T23:22:48.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Light Bar",
               "DocumentMoniker": "C:\\Users\\deniz\\Desktop\\Smart Strip\\Light Bar\\Light Bar\\Light Bar.vbproj",
               "RelativeDocumentMoniker": "Light Bar\\Light Bar.vbproj",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Light Bar",
               "DocumentMoniker": "C:\\Users\\deniz\\Desktop\\Smart Strip\\Light Bar\\Light Bar\\Light Bar.vbproj",
               "RelativeDocumentMoniker": "Light Bar\\Light Bar.vbproj",
@@ -68,13 +85,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Client.vb",
               "DocumentMoniker": "C:\\Users\\deniz\\Desktop\\Smart Strip\\Light Bar\\Light Bar\\Client.vb",
               "RelativeDocumentMoniker": "Light Bar\\Client.vb",
               "ToolTip": "C:\\Users\\deniz\\Desktop\\Smart Strip\\Light Bar\\Light Bar\\Client.vb",
               "RelativeToolTip": "Light Bar\\Client.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-02-21T23:18:51.151Z",
               "EditorCaption": ""
