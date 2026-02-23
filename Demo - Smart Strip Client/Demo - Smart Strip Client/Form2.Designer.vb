@@ -30,6 +30,7 @@ Partial Class Form2
         ' MenuStrip1
         ' 
         MenuStrip1.BackColor = Color.Transparent
+        MenuStrip1.Font = New Font("Adam Medium", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Size = New Size(800, 24)

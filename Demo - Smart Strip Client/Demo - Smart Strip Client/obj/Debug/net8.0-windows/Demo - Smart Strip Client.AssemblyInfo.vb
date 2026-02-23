@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Demo - Smart Strip Client"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9d10b96765d71a6c081c8f7f00114cd63f09752"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Demo - Smart Strip Client"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Demo - Smart Strip Client"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

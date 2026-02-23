@@ -5,6 +5,9 @@ Public Class Form2
     Private WithEvents _server As New MenuServer()
     Private lastProcessID As Integer = -1
 
+    Private adamBoldFont As New Font("Adam Bold", 16, FontStyle.Regular) 'Missing DCL connection
+    Private adamMediumFont As New Font("Adam Medium", 16, FontStyle.Regular) 'Missing DCL connection
+
     <DllImport("user32.dll")>
     Private Shared Function SetForegroundWindow(hWnd As IntPtr) As Boolean
     End Function
@@ -24,6 +27,7 @@ Public Class Form2
     <DllImport("user32.dll")>
     Private Shared Function SetWindowLong(hWnd As IntPtr, nIndex As Integer, dwNewLong As Integer) As Integer
     End Function
+
     Protected Overrides ReadOnly Property CreateParams As CreateParams
         Get
             Dim p As CreateParams = MyBase.CreateParams
@@ -38,7 +42,7 @@ Public Class Form2
         Me.FormBorderStyle = FormBorderStyle.None
         Me.TopMost = True
         Me.BackColor = Color.White
-        Me.Bounds = New Rectangle(0, 0, Screen.PrimaryScreen.Bounds.Width, 24)
+        Me.Bounds = New Rectangle(0, 0, Screen.PrimaryScreen.Bounds.Width, 30)
 
         Try
             _server.Start()
@@ -79,19 +83,12 @@ Public Class Form2
 
     Private Function IsMouseOverAnyDropDown(items As ToolStripItemCollection) As Boolean
         Dim mousePos = Cursor.Position
-
         For Each item As ToolStripItem In items
             If TypeOf item Is ToolStripMenuItem Then
                 Dim mi = DirectCast(item, ToolStripMenuItem)
-
                 If mi.DropDown.Visible Then
-                    If mi.DropDown.Bounds.Contains(mousePos) Then
-                        Return True
-                    End If
-
-                    If IsMouseOverAnyDropDown(mi.DropDownItems) Then
-                        Return True
-                    End If
+                    If mi.DropDown.Bounds.Contains(mousePos) Then Return True
+                    If IsMouseOverAnyDropDown(mi.DropDownItems) Then Return True
                 End If
             End If
         Next
@@ -105,8 +102,10 @@ Public Class Form2
         End If
 
         MenuStrip1.Items.Clear()
-        For Each itemData In items
-            MenuStrip1.Items.Add(BuildMenuRecursive(itemData))
+
+        For i As Integer = 0 To items.Count - 1
+            Dim isFirstAppButton As Boolean = (i = 0)
+            MenuStrip1.Items.Add(BuildMenuRecursive(items(i), True, isFirstAppButton))
         Next
     End Sub
 
@@ -120,14 +119,66 @@ Public Class Form2
 
     Private Sub ShowDefaultMenu()
         MenuStrip1.Items.Clear()
-        Dim finder = New ToolStripMenuItem("Finder")
-        finder.DropDownItems.Add("Über dieses System")
+
+        ' XenDesk (Erster Button -> Bold)
+        Dim finder = New ToolStripMenuItem("XenDesk")
+        finder.Font = adamBoldFont
+
+        ' Untermenü für XenDesk
+        Dim subItem = New ToolStripMenuItem("Über dieses System")
+        subItem.Font = adamMediumFont
+        subItem.Tag = "ABOUT_SYSTEM"
+        AddHandler subItem.Click, AddressOf OnMenuItemClick
+        finder.DropDownItems.Add(subItem)
+
+        Dim subItem2 = New ToolStripMenuItem("Quit XenDesk")
+        subItem2.Font = adamMediumFont
+        subItem2.Tag = "CLOSE"
+        AddHandler subItem2.Click, AddressOf OnMenuItemClick
+        finder.DropDownItems.Add(subItem2)
+
+        Dim FileOption = New ToolStripMenuItem("File")
+        FileOption.Font = adamMediumFont
+        FileOption.Tag = "FILE_MENU"
+        AddHandler FileOption.Click, AddressOf OnMenuItemClick
+
+
+        Dim EditOption = New ToolStripMenuItem("Edit")
+        EditOption.Font = adamMediumFont
+
+        Dim DesignOption = New ToolStripMenuItem("Design")
+        DesignOption.Font = adamMediumFont
+
+        Dim WindowOption = New ToolStripMenuItem("Window")
+        WindowOption.Font = adamMediumFont
+
+        Dim QuickToolsOption = New ToolStripMenuItem("Quick Tools")
+        QuickToolsOption.Font = adamMediumFont
+
+        Dim HelpOption = New ToolStripMenuItem("?")
+        HelpOption.Font = adamMediumFont
+
+
         MenuStrip1.Items.Add(finder)
+        MenuStrip1.Items.Add(FileOption)
+        MenuStrip1.Items.Add(EditOption)
+        MenuStrip1.Items.Add(DesignOption)
+        MenuStrip1.Items.Add(WindowOption)
+        MenuStrip1.Items.Add(QuickToolsOption)
+        MenuStrip1.Items.Add(HelpOption)
     End Sub
 
-    Private Function BuildMenuRecursive(data As MenuItemData) As ToolStripMenuItem
+    ' EINZIGE BuildMenuRecursive Funktion (zusammengefasst)
+    Private Function BuildMenuRecursive(data As MenuItemData, isTopLevel As Boolean, Optional forceBold As Boolean = False) As ToolStripMenuItem
         Dim item As New ToolStripMenuItem(data.Text)
         item.Tag = data.ID
+
+        ' Schrift-Logik
+        If isTopLevel AndAlso forceBold Then
+            item.Font = adamBoldFont
+        Else
+            item.Font = adamMediumFont
+        End If
 
         AddHandler item.DropDownOpening, Sub(s, e)
                                              Dim menu = DirectCast(s, ToolStripMenuItem)
@@ -136,9 +187,10 @@ Public Class Form2
 
         If data.SubItems IsNot Nothing AndAlso data.SubItems.Count > 0 Then
             For Each subData In data.SubItems
-                item.DropDownItems.Add(BuildMenuRecursive(subData))
+                item.DropDownItems.Add(BuildMenuRecursive(subData, False, False))
             Next
         Else
+            ' Nur Items ohne Untermenü brauchen ein Klick-Event
             AddHandler item.Click, AddressOf OnMenuItemClick
         End If
         Return item
@@ -147,7 +199,15 @@ Public Class Form2
     Private Sub OnMenuItemClick(sender As Object, e As EventArgs)
         Dim item = DirectCast(sender, ToolStripMenuItem)
         If item.Tag IsNot Nothing Then
-            _server.SendClickToActiveApp(item.Tag.ToString())
+            Dim tagValue As String = item.Tag.ToString()
+
+            _server.SendClickToActiveApp(tagValue)
+
+            Debug.WriteLine("Geklicktes Item: " & item.Text & " mit Tag: " & tagValue)
+
+            If tagValue = "CLOSE" Then
+                Application.Exit()
+            End If
         End If
     End Sub
 
